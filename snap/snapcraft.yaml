@@ -7,7 +7,7 @@ base: core18
 confinement: strict
 grade: stable
 architectures:
- - build-on: amd64, arm64
+ - build-on: [amd64, arm64]
 parts:
   mongodb:
     plugin: nil
