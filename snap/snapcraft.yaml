@@ -26,7 +26,7 @@ parts:
 
 apps:
   unifi:
-    command: service unifi start   # /etc/init.d/unifi start
+    command: sudo service unifi start   # /etc/init.d/unifi start
     daemon: oneshot
     plugs: [network,network-bind]
-    stop-command: service unifi stop   # /etc/init.d/unifi stop
+    stop-command: sudo service unifi stop   # /etc/init.d/unifi stop
