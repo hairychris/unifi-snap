@@ -25,7 +25,8 @@ parts:
     source: https://dl.ui.com/unifi/5.13.29/unifi_sysvinit_all.deb
 
 apps:
-  start-unifi:
-    command: service unifi start
-    daemon: simple
+  unifi:
+    command: service unifi start   # /etc/init.d/unifi start
+    daemon: oneshot
     plugs: [network,network-bind]
+    stop-command: service unifi stop   # /etc/init.d/unifi stop
