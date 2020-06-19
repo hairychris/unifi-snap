@@ -7,13 +7,11 @@ base: core18
 confinement: strict
 grade: stable
 architectures:
- - build-on: [amd64, arm64]
+ - build-on: arm64
 parts:
   mongodb:
     plugin: nil
-    # arm64: https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/3.6/multiverse/binary-arm64/mongodb-org-mongos_3.6.18_arm64.deb
-    # amd64: https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/3.6/multiverse/binary-amd64/mongodb-org-server_3.6.18_amd64.deb
-    source: https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/3.6/multiverse/binary-${SNAP_ARCH}/mongodb-org-server_3.6.18_${SNAP_ARCH}.deb
+    source: https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/3.6/multiverse/binary-arm64/mongodb-org-mongos_3.6.18_arm64.deb
 
   unifi:
     plugin: nil
