@@ -27,7 +27,7 @@ parts:
 
 apps:
   unifi:
-    command: $SNAP/etc/init.d/unifi start
+    command: $SNAP/usr/lib/unifi/bin/unifi.init start
     daemon: oneshot
     plugs: [network,network-bind]
-    stop-command: $SNAP/etc/init.d/unifi stop
+    stop-command: $SNAP/usr/lib/unifi/bin/unifi.init stop
