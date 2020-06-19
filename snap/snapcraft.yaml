@@ -15,7 +15,7 @@ parts:
 
   unifi:
     plugin: nil
-    stage-packages: [openjdk-8-jre, jsvc]
+    stage-packages: [ca-certificates-java, openjdk-8-jre, jsvc]
     source: https://dl.ui.com/unifi/5.13.29/unifi_sysvinit_all.deb
 
 # apps:
