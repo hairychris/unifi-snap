@@ -24,7 +24,8 @@ parts:
       - jsvc
     source: https://dl.ui.com/unifi/5.13.29/unifi_sysvinit_all.deb
 
-# apps:
-#   start-unifi:
-#     command: 
-#     daemon: simple
+apps:
+  start-unifi:
+    command: service unifi start
+    daemon: simple
+    plugs: [network,network-bind]
