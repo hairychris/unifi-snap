@@ -14,7 +14,8 @@ parts:
     source: https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/3.6/multiverse/binary-arm64/mongodb-org-mongos_3.6.18_arm64.deb
 
   unifi:
-    plugin: nil
+    plugin: dump
+    source-type: deb
     build-packages:
       - ca-certificates
       - ca-certificates-java
@@ -26,7 +27,7 @@ parts:
 
 apps:
   unifi:
-    command: /etc/init.d/unifi start
+    command: $SNAP/etc/init.d/unifi start
     daemon: oneshot
     plugs: [network,network-bind]
-    stop-command: /etc/init.d/unifi stop
+    stop-command: $SNAP/etc/init.d/unifi stop
