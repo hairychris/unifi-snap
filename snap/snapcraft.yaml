@@ -11,7 +11,7 @@ architectures:
 parts:
   mongodb:
     plugin: nil
-    source: https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/3.6/multiverse/binary-arm64/mongodb-org-mongos_3.6.18_arm64.deb
+    source: https://repo.mongodb.org/apt/ubuntu/dists/xenial/mongodb-org/3.6/multiverse/binary-arm64/mongodb-org-mongos_3.6.22_arm64.deb
 
   unifi:
     plugin: dump
@@ -23,7 +23,7 @@ parts:
     stage-packages:
       - openjdk-8-jre-headless
       - jsvc
-    source: https://dl.ui.com/unifi/5.13.29/unifi_sysvinit_all.deb
+    source: https://dl.ui.com/unifi/6.0.45/unifi_sysvinit_all.deb
 
 apps:
   unifi:
