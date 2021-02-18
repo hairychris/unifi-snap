@@ -23,7 +23,7 @@ parts:
     stage-packages:
       - openjdk-8-jre-headless
       - jsvc
-    source: https://dl.ui.com/unifi/5.13.29/unifi_sysvinit_all.deb
+    source: https://dl.ui.com/unifi/6.0.45/unifi_sysvinit_all.deb
 
 apps:
   unifi:
