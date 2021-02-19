@@ -20,6 +20,7 @@ parts:
       - ca-certificates
       - ca-certificates-java
       - openjdk-8-jre-headless
+    override-pull: snapcraftctl pull && rm -f etc/init.d/unifi
     stage-packages:
       - openjdk-8-jre-headless
       - jsvc
